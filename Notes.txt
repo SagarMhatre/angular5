@@ -50,3 +50,7 @@ Declaring variables :
 import <type> from '<path to it's .ts file>'
 <access modifier> <var-name> : <type> = <value>
 ---------------------------------------------------------------
+Register the service in app.module.ts 
+import {<service-name>} from '<path to it's .ts file>'
+providers :[<service-name>]
+---------------------------------------------------------------
