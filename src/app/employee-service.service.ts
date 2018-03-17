@@ -16,8 +16,16 @@ export class EmployeeServiceService {
     return this.employees;
   }
 
+  get(id : number) {
+    return this.employees[id];
+  }
+
   save(employee: Employee){
     this.employees.push(employee);
+  }
+
+  update(id : number, employee: Employee){
+    this.employees[id] = employee;
   }
 
 }
