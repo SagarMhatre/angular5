@@ -70,3 +70,6 @@ in app.module.ts
 then, in the component ,
 [(ngModel)]="<var-name>"
 ---------------------------------------------------------------
+Adding recods to array
+Use the push method to add records to an array
+---------------------------------------------------------------

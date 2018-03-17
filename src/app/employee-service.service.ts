@@ -16,4 +16,8 @@ export class EmployeeServiceService {
     return this.employees;
   }
 
+  save(employee: Employee){
+    this.employees.push(employee);
+  }
+
 }
