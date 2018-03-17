@@ -41,3 +41,12 @@ Interfaces are used to type-check whether an object fits a certain structure.
 Basic Types (which can be used in an interface) - http://www.typescriptlang.org/docs/handbook/basic-types.html
 \Workspace\angular\angular5>ng g i Employee
 ---------------------------------------------------------------
+Adding a Service
+
+\Workspace\angular\angular5>ng g s EmployeeService
+Add your members & methods in the ts file generated
+
+Declaring variables :
+import <type> from '<path to it's .ts file>'
+<access modifier> <var-name> : <type> = <value>
+---------------------------------------------------------------
