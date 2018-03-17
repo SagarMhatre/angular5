@@ -121,3 +121,7 @@ Accessing index of an entry in array
     <a routerLink="/edit/{{i}}">  {{employee.id}} </a>
 </div>
 ---------------------------------------------------------------
+Adding a route with parameter (id)
+import the component
+Routes = [{ path : '<path>/:id' , component : <component-name> }]
+---------------------------------------------------------------
