@@ -20,6 +20,7 @@ import { ActivatedRoute } from '@angular/router';
   <input type="file" id='image'  />           
   <br>
   <button (click)="save()" >Save</button>
+  <button (click)="delete()" >Delete</button>
 `,
   styleUrls: ['./employee-edit.component.css']
 })
@@ -40,6 +41,11 @@ export class EmployeeEditComponent implements OnInit {
 
   save(){
     this._employeeService.update(this.id, this.employee);
+    this._router.navigate(['list'])
+  }
+
+  delete(){
+    this._employeeService.delete(this.id);
     this._router.navigate(['list'])
   }
 

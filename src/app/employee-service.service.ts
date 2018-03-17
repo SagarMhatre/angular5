@@ -28,4 +28,8 @@ export class EmployeeServiceService {
     this.employees[id] = employee;
   }
 
+  delete(id:number){
+    this.employees.splice(id, 1);
+  }
+
 }
