@@ -61,3 +61,12 @@ Adding Service as dependency in the component that uses the Service
 import <service> from '<path to it's .ts file>'
 constructor (private _var : <service>) { ...
 ---------------------------------------------------------------
+Two way binding
+Add the FormsModule - This is required for the ngModel directive 
+that provides two way binding between events & data (interpolation)
+in app.module.ts
+    import { FormsModule } from '@angular/forms';
+    imports: [ FormsModule ,...
+then, in the component ,
+[(ngModel)]="<var-name>"
+---------------------------------------------------------------
