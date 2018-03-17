@@ -91,6 +91,8 @@ In an existing app ,
     in src\app\app.module.ts
         import { AppRoutingModule } from './app-routing.module';
         imports: [    AppRoutingModule ...
+    in the app.component.html
+        <router-outlet></router-outlet>
 In a new App,
     \Workspace\angular>ng new routing-app --routing
 
