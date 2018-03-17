@@ -57,4 +57,10 @@ $ git push -u origin master
 Open the folder in VSCode 
 Ctrl+Shift+G
 ... > Publish Branch
+
+When more code is changed,
+Ctrl+Shift+G
+Press the + button to stage the changes
+... > Commit All (Enter Message)
+... > Publish Branch
 ---------------------------------------------------------------
