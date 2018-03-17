@@ -9,6 +9,7 @@ import {EmployeeServiceService} from '../employee-service.service'
   <div *ngFor = "let employee of employees" >
        {{employee.id}} 
   </div>
+  <a routerLink="/create"> Create </a>
   `,
   styleUrls: ['./employee-list.component.css']
 })

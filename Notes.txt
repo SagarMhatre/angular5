@@ -104,3 +104,6 @@ Creating  routes to components
         <router-outlet></router-outlet>
 Navigate to http://localhost:4200/<path>
 ---------------------------------------------------------------
+Navigation links
+<a routerLink="/<path>"> Link-Text </a>
+---------------------------------------------------------------
