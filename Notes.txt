@@ -36,3 +36,8 @@ Press the + button to stage the changes
 ... > Commit All (Enter Message)
 ... > Publish Branch
 ---------------------------------------------------------------
+Adding an Interface
+Interfaces are used to type-check whether an object fits a certain structure. 
+Basic Types (which can be used in an interface) - http://www.typescriptlang.org/docs/handbook/basic-types.html
+\Workspace\angular\angular5>ng g i Employee
+---------------------------------------------------------------
