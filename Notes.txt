@@ -57,3 +57,7 @@ providers :[<service-name>]
 Adding a new component
 \Workspace\angular\angular5>ng g c EmployeeList
 ---------------------------------------------------------------
+Adding Service as dependency in the component that uses the Service
+import <service> from '<path to it's .ts file>'
+constructor (private _var : <service>) { ...
+---------------------------------------------------------------
