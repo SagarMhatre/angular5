@@ -54,3 +54,6 @@ Register the service in app.module.ts
 import {<service-name>} from '<path to it's .ts file>'
 providers :[<service-name>]
 ---------------------------------------------------------------
+Adding a new component
+\Workspace\angular\angular5>ng g c EmployeeList
+---------------------------------------------------------------

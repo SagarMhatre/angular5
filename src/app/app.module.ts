@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import {EmployeeServiceService} from  './employee-service.service'
+import {EmployeeServiceService} from  './employee-service.service';
+import { EmployeeListComponent } from './employee-list/employee-list.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule
