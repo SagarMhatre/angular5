@@ -112,3 +112,7 @@ import {Router} from "@angular/router";
 add it as dependency in the constructor
     constructor(private _router: Router ...
 this._router.navigate(['<path>'])
+---------------------------------------------------------------
+Generating component with Inline Template
+\Workspace\angular\angular5>ng g c employee-edit -it
+---------------------------------------------------------------
