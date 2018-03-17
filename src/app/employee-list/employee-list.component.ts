@@ -6,8 +6,8 @@ import {EmployeeServiceService} from '../employee-service.service'
   selector: 'app-employee-list',
   template: `
   Employee List : 
-  <div *ngFor = "let employee of employees" >
-       {{employee.id}} 
+  <div *ngFor = "let employee of employees; index as i" >
+    <a routerLink="/edit/{{i}}">  {{employee.id}} </a>
   </div>
   <a routerLink="/create"> Create </a>
   `,

@@ -116,3 +116,8 @@ this._router.navigate(['<path>'])
 Generating component with Inline Template
 \Workspace\angular\angular5>ng g c employee-edit -it
 ---------------------------------------------------------------
+Accessing index of an entry in array
+<div *ngFor = "let employee of employees; index as i" >
+    <a routerLink="/edit/{{i}}">  {{employee.id}} </a>
+</div>
+---------------------------------------------------------------
