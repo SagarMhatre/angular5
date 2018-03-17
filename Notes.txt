@@ -125,3 +125,8 @@ Adding a route with parameter (id)
 import the component
 Routes = [{ path : '<path>/:id' , component : <component-name> }]
 ---------------------------------------------------------------
+To Access Parameter in the route
+	import { ActivatedRoute } from '@angular/router';
+	constructor( private _route : ActivatedRoute 
+	this.id = parseInt(this._route.snapshot.paramMap.get('id'));
+---------------------------------------------------------------
