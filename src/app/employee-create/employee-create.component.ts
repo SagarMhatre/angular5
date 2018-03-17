@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employee';
 import { EmployeeServiceService } from '../employee-service.service'
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-employee-create',
@@ -27,7 +28,8 @@ export class EmployeeCreateComponent implements OnInit {
   private age : number;
   private image : String ;
 
-  constructor(private _employeeService : EmployeeServiceService) { }
+  constructor(private _employeeService : EmployeeServiceService, 
+    private _router: Router) { }
 
   ngOnInit() {
   }
@@ -35,7 +37,8 @@ export class EmployeeCreateComponent implements OnInit {
   save(){
     this.image = './images/' + this.id;
     var employee : Employee = {id : this.id , age : this.age, image : this.image};
-    this._employeeService.save(employee)
+    this._employeeService.save(employee);
+    this._router.navigate(['list'])
   }
 
 }

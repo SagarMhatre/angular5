@@ -107,3 +107,8 @@ Navigate to http://localhost:4200/<path>
 Navigation links
 <a routerLink="/<path>"> Link-Text </a>
 ---------------------------------------------------------------
+Programmatic Navigation in components
+import {Router} from "@angular/router";
+add it as dependency in the constructor
+    constructor(private _router: Router ...
+this._router.navigate(['<path>'])
