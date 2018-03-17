@@ -95,4 +95,10 @@ In an existing app ,
         <router-outlet></router-outlet>
 In a new App,
     \Workspace\angular>ng new routing-app --routing
-
+---------------------------------------------------------------
+Creating  routes to components
+    import the components
+    add path - component mapping to the routes const array
+        const routes: Routes = [ {path:"<path>" , component : <component-name> }, ... 
+Navigate to http://localhost:4200/<path>
+---------------------------------------------------------------
