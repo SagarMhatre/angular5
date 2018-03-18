@@ -133,3 +133,10 @@ To Access Parameter in the route
 Install the aws amplify library
 \Workspace\angular\angular5>npm install aws-amplify --save
 ---------------------------------------------------------------
+Initialize awsmobile,  enable user sign in & publish
+Run the below & follow the prompts
+
+\Workspace\angular\angular5>awsmobile init
+\Workspace\angular\angular5>awsmobile user-signin enable
+\Workspace\angular\angular5>awsmobile push
+---------------------------------------------------------------
