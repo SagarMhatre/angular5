@@ -140,3 +140,20 @@ Run the below & follow the prompts
 \Workspace\angular\angular5>awsmobile user-signin enable
 \Workspace\angular\angular5>awsmobile push
 ---------------------------------------------------------------
+Login Scenario
+
+add @types/node
+	in tsconfig.app.json add "node" to the types array in compilerOptions
+	\Workspace\angular\angular5>npm install --save @types/node
+in app.components.ts 
+	import Amplify, { Auth } from 'aws-amplify';
+	export const aws_exports = require('../aws-exports').default;
+	Amplify.configure(aws_exports);
+Create a new component for login & add it to the app.component.html
+
+ref:
+	https://aws.github.io/aws-amplify/media/authentication_guide#automated-setup
+	https://github.com/aws/aws-sdk-js/issues/1271#issuecomment-267488590
+	https://github.com/aws/aws-amplify/issues/222#issuecomment-362670141
+	https://aws.github.io/aws-amplify/media/authentication_guide#sign-in
+---------------------------------------------------------------
