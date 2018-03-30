@@ -133,3 +133,11 @@ To Access Parameter in the route
 Install the aws amplify library
 \Workspace\angular\angular5>npm install aws-amplify --save
 ---------------------------------------------------------------
+Initialize awsmobile
+
+\Workspace\angular\angular5>awsmobile init
+? What is your project's build command:  ng build
+? What is your project's start command for local test run:  ng serve
+
+IMP : Manually backup the src/aws-exports.js file
+---------------------------------------------------------------
