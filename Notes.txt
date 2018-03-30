@@ -130,3 +130,6 @@ To Access Parameter in the route
 	constructor( private _route : ActivatedRoute 
 	this.id = parseInt(this._route.snapshot.paramMap.get('id'));
 ---------------------------------------------------------------
+Install the aws amplify library
+\Workspace\angular\angular5>npm install aws-amplify --save
+---------------------------------------------------------------
