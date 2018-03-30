@@ -8,7 +8,8 @@ import { UserSessionService } from './user-session.service';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeCreateComponent } from './employee-create/employee-create.component';
 import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { NewPasswordComponent } from './new-password/new-password.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoginComponent } from './login/login.component'
     EmployeeListComponent,
     EmployeeCreateComponent,
     EmployeeEditComponent,
-    LoginComponent
+    LoginComponent,
+    NewPasswordComponent
   ],
   imports: [
     BrowserModule, 

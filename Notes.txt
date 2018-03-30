@@ -175,3 +175,6 @@ Enter Username and Temporary Password. Untick all the checkboxes
 Separated User Session Storage to a separate Service 
 UserSessionService
 ---------------------------------------------------------------
+Change password on 1st login implemented
+Auth.completeNewPassword
+---------------------------------------------------------------
