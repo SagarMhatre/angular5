@@ -145,3 +145,10 @@ Enable user sign in
 
 \Workspace\angular\angular5>awsmobile user-signin enable
 ---------------------------------------------------------------
+Disable MFA & push
+
+Set the mfa-configuration: OFF in the mobile-hub-project.yml
+Remove the alias-attribute phone_number in the mobile-hub-project.yml
+
+\Workspace\angular\angular5>awsmobile push
+---------------------------------------------------------------
