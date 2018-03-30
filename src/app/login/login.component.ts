@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Auth } from 'aws-amplify';
-import {aws_exports} from '../app.component';
+import { UserSessionService } from '../user-session.service';
+import { aws_exports } from '../app.component';
 
 @Component({
   selector: 'app-login',
@@ -16,16 +16,12 @@ export class LoginComponent implements OnInit {
   private username: string;
   private password: string;
 
-  constructor() { }
+  constructor(private _userSessionService: UserSessionService) { }
 
   ngOnInit() {
   }
 
   login() {
-    Auth.signIn(this.username, this.password)
-      .then(user => {
-        console.log(user)
-      })
-      .catch(err => console.log(err));
+    this._userSessionService.login(this.username, this.password)
   }
 }

@@ -172,3 +172,6 @@ General Settings > User and groups > Create User
 Enter Username and Temporary Password. Untick all the checkboxes
 
 ---------------------------------------------------------------
+Separated User Session Storage to a separate Service 
+UserSessionService
+---------------------------------------------------------------
