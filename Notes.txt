@@ -157,3 +157,5 @@ ref:
 	https://github.com/aws/aws-amplify/issues/222#issuecomment-362670141
 	https://aws.github.io/aws-amplify/media/authentication_guide#sign-in
 ---------------------------------------------------------------
+Replaced the src/aws_exports.js 
+---------------------------------------------------------------
