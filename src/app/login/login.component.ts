@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Auth } from 'aws-amplify';
+import {aws_exports} from '../app.component';
 
 @Component({
   selector: 'app-login',
@@ -20,8 +22,10 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log(this.username)
-    console.log(this.password)
+    Auth.signIn(this.username, this.password)
+      .then(user => {
+        console.log(user)
+      })
+      .catch(err => console.log(err));
   }
-
 }
