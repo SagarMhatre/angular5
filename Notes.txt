@@ -141,3 +141,7 @@ Initialize awsmobile
 
 IMP : Manually backup the src/aws-exports.js file
 ---------------------------------------------------------------
+Enable user sign in 
+
+\Workspace\angular\angular5>awsmobile user-signin enable
+---------------------------------------------------------------
