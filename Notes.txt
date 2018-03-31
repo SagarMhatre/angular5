@@ -178,3 +178,48 @@ UserSessionService
 Change password on 1st login implemented
 Auth.completeNewPassword
 ---------------------------------------------------------------
+Saving Records to DynamoDB (Work around)
+1. Create our Dynamo Table
+2. Create a IAM Role which can do CRUD on our table
+3. Create a Lambda Function with code as per dynamodb.js
+    Set the dynamodb.dynamodb_handler as handler Function
+4. Create a API which will invoke the above Lambda Function & Enable CORS on it
+    Deploy the API to a stage & copy it's invoke url
+5. app.component.ts
+    import { API } from 'aws-amplify';
+
+    //Amplify.configure(aws_exports);
+    Amplify.configure({
+    Auth: {
+    // REQUIRED - Amazon Cognito Identity Pool ID
+        identityPoolId: '<copy from src/aws-exports.js>',
+    // REQUIRED - Amazon Cognito Region
+        region: '<copy from src/aws-exports.js>', 
+    // OPTIONAL - Amazon Cognito User Pool ID
+        userPoolId: '<copy from src/aws-exports.js>', 
+    // OPTIONAL - Amazon Cognito Web Client ID
+        userPoolWebClientId: '<copy from src/aws-exports.js>',
+    },
+    API: {
+        endpoints: [
+            {
+                name: "<name of api>",
+                endpoint: "<invoke url of api>",
+                service: "lambda",
+                region: "ap-south-1"
+            }
+        ]
+    }
+    });
+6. Create a new component   
+        import { API } from 'aws-amplify';
+
+        async save() {
+            const newEmployee = { <attribute>:<value>, ... } ;
+            
+            await API.post('<name of api>', '/employee', { body: newEmployee })
+            .then(response => {
+                console.log(response);
+            }
+            );
+        }

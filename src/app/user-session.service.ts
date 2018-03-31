@@ -18,7 +18,7 @@ export class UserSessionService {
         console.log(response);
         if (response.signInUserSession != null) {
           this.user = response;
-          this._router.navigate(['home']);
+          this._router.navigate(['save']);
         } else if (response.challengeName == "NEW_PASSWORD_REQUIRED") {
           this.user = response;
           this._router.navigate(['new-password']);

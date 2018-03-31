@@ -1,11 +1,60 @@
 --- !com.amazonaws.mobilehub.v0.Project 
 features:
+  cloudlogic: !com.amazonaws.mobilehub.v0.CloudLogic 
+    components:
+      employeeCRUD: !com.amazonaws.mobilehub.v0.API 
+        attributes:
+          name: employeeCRUD
+          requires-signin: false
+          sdk-generation-stage-name: Development
+        paths:
+          /employee: !com.amazonaws.mobilehub.v0.Function 
+            codeFilename: uploads/employee-20180331100925.zip
+            description: 'Handler for calls to resource path : /employee/{proxy+}'
+            enableCORS: true
+            environment: {}
+            handler: lambda.handler
+            hashcode: J8rDgMvia6OKSrqhMPxUAJIAAbVHkmeuOdHuT5Z20Uw=
+            memorySize: '128'
+            modified: '2018-03-31T04:38:26.100+0000'
+            name: employee
+            runtime: nodejs6.10
+            timeout: '3'
+            version: 7taIJmKGMsr8j_hhu8Qs7SVRm1nCNfzv
+          '/employee/{proxy+}': !com.amazonaws.mobilehub.v0.Function 
+            codeFilename: uploads/employee-20180331100925.zip
+            description: 'Handler for calls to resource path : /employee/{proxy+}'
+            enableCORS: true
+            environment: {}
+            handler: lambda.handler
+            hashcode: J8rDgMvia6OKSrqhMPxUAJIAAbVHkmeuOdHuT5Z20Uw=
+            memorySize: '128'
+            modified: '2018-03-31T04:38:26.100+0000'
+            name: employee
+            runtime: nodejs6.10
+            timeout: '3'
+            version: 7wPewifYu7R_rjfjDEEITQaH8ENVmPtd
   content-delivery: !com.amazonaws.mobilehub.v0.ContentDelivery 
     attributes:
       enabled: true
       visibility: public-global
     components:
       release: !com.amazonaws.mobilehub.v0.Bucket {}
+  database: !com.amazonaws.mobilehub.v0.Database 
+    components:
+      database-nosql: !com.amazonaws.mobilehub.v0.NoSQLDatabase 
+        tables:
+          - !com.amazonaws.mobilehub.v0.NoSQLTable 
+            attributes:
+              age: N
+              id: S
+              image: S
+            hashKeyName: id
+            hashKeyType: S
+            rangeKeyName: ''
+            rangeKeyType: ''
+            tableName: ___DYNAMIC_PREFIX___-employee
+            tablePrivacy: public
   mobile-analytics: !com.amazonaws.mobilehub.v0.Pinpoint 
     components:
       analytics: !com.amazonaws.mobilehub.v0.PinpointAnalytics {}

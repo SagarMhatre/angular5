@@ -5,6 +5,7 @@ import {EmployeeCreateComponent} from './employee-create/employee-create.compone
 import {EmployeeEditComponent} from './employee-edit/employee-edit.component'
 import {LoginComponent} from './login/login.component'
 import {NewPasswordComponent} from './new-password/new-password.component'
+import {DynamodbSaveComponent} from './dynamodb-save/dynamodb-save.component'
 
 const routes: Routes = [
   {path:"login" , component : LoginComponent },
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:"home" , component : EmployeeListComponent },
   {path:"list" , component : EmployeeListComponent },  
   {path:"create" , component : EmployeeCreateComponent},
-  {path:"edit/:id" , component : EmployeeEditComponent}
+  {path:"edit/:id" , component : EmployeeEditComponent},
+  {path:"save" , component :DynamodbSaveComponent}
 ];
 
 @NgModule({

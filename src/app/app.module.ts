@@ -9,7 +9,8 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeCreateComponent } from './employee-create/employee-create.component';
 import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
 import { LoginComponent } from './login/login.component';
-import { NewPasswordComponent } from './new-password/new-password.component'
+import { NewPasswordComponent } from './new-password/new-password.component';
+import { DynamodbSaveComponent } from './dynamodb-save/dynamodb-save.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NewPasswordComponent } from './new-password/new-password.component'
     EmployeeCreateComponent,
     EmployeeEditComponent,
     LoginComponent,
-    NewPasswordComponent
+    NewPasswordComponent,
+    DynamodbSaveComponent
   ],
   imports: [
     BrowserModule, 
