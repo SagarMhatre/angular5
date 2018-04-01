@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import Amplify, { Auth } from 'aws-amplify';
+import { Storage } from 'aws-amplify';
 export const aws_exports = require('../aws-exports').default;
 Amplify.configure(aws_exports);
 @Component({

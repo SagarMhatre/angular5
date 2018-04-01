@@ -7,7 +7,8 @@ import {EmployeeServiceService} from  './employee-service.service';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeCreateComponent } from './employee-create/employee-create.component';
 import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { S3UploadComponent } from './s3-upload/s3-upload.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LoginComponent } from './login/login.component'
     EmployeeListComponent,
     EmployeeCreateComponent,
     EmployeeEditComponent,
-    LoginComponent
+    LoginComponent,
+    S3UploadComponent
   ],
   imports: [
     BrowserModule, 

@@ -172,3 +172,15 @@ General Settings > User and groups > Create User
 Enter Username and Temporary Password. Untick all the checkboxes
 
 ---------------------------------------------------------------
+Upload files to S3
+
+\Workspace\angular\angular5>awsmobile user-files enable --prompt
+app.component.ts
+    import { Storage } from 'aws-amplify';
+Generate a new component for S3 upload
+    import { Storage } from 'aws-amplify';
+    upload(){
+        Storage.put('test.txt', 'Hello')
+        .then (result => console.log(result))
+        .catch(err => console.log(err));
+    }
