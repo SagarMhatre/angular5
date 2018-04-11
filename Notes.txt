@@ -193,3 +193,21 @@ Mobile Hub > angular5 > User Sign-in
 
 Use Storage.vault to store to private space
 --------------------------------------------------------------------------
+
+Alternative (Recommended) process to require user sign-in
+
+\Workspace\angular\angular5>awsmobile user-signin configure
+
+? Sign-in is currently enabled, what do you want to do next Configure Sign-in to be required (Currently set to optional)
+? Are users required to sign in to your app? Required
+
+\Workspace\angular\angular5>awsmobile push
+
+the backend awsmobile project is ahead of your local copy
+it might have been updated by others or through other chanels
+if you continue with the push, unintended consequences may occur
+such as accidental awsmobile feature removal, among others
+# to retrieve the latest details of the backend awsmobile project
+    $ awsmobile pull
+? do you want to continue with the push Yes
+--------------------------------------------------------------------------
