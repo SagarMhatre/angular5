@@ -184,3 +184,12 @@ Generate a new component for S3 upload
         .then (result => console.log(result))
         .catch(err => console.log(err));
     }
+--------------------------------------------------------------------------
+s3 File Security
+
+Login into the AWS S3 console & go to the AWS Mobile Hub Console
+Mobile Hub > angular5 > User Sign-in
+> Email & Password > Require user sign-in? [Set it to YES]
+
+Use Storage.vault to store to private space
+--------------------------------------------------------------------------
